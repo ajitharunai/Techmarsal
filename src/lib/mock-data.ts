@@ -438,7 +438,7 @@ export const MOCK_POSTS: BlogPost[] = [
     category: 'Tools',
     date: 'May 3, 2024',
     readTime: '16 min read',
-    image: 'https://images.unsplash.com/photo-1635776062127-d3b23689559f?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/quantum-hardware-pattern.png',
     author: {
       name: 'Ajith Kumar',
       image: 'https://www.arunaiajith.blog/images/ajith-profile.png',

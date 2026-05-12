@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="relative pt-[160px] pb-[100px] overflow-hidden">
+    <section className="relative pt-[120px] md:pt-[160px] pb-[80px] md:pb-[100px] overflow-hidden">
       {/* Background AI Waveform Graphic (SVG) */}
       <div className="absolute top-[20%] left-[-5%] w-[110%] h-[400px] opacity-10 pointer-events-none select-none">
         <svg width="100%" height="100%" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,23 +29,23 @@ export default function Hero() {
             </div>
           </div>
 
-          <h1 className="text-7xl md:text-9xl font-black tracking-tighter mb-8 leading-[0.9] text-white">
+          <h1 className="text-5xl sm:text-6xl md:text-9xl font-black tracking-tighter mb-8 leading-[0.9] text-white">
             Tech<span className="text-gradient">marsal</span>
-            <span className="inline-block ml-4 w-4 h-4 rounded-full bg-[#FF6A00] shadow-[0_0_20px_#FF6A00] animate-pulse" />
+            <span className="inline-block ml-2 md:ml-4 w-3 h-3 md:w-4 md:h-4 rounded-full bg-[#FF6A00] shadow-[0_0_20px_#FF6A00] animate-pulse" />
           </h1>
 
-          <p className="text-xl md:text-2xl text-text-secondary max-w-2xl mb-12 font-medium leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-text-secondary max-w-2xl mb-12 font-medium leading-relaxed">
             The futuristic command center for <span className="text-white">AI insights</span>, 
             cutting-edge <span className="text-white">SEO strategies</span>, and 
             world-class <span className="text-white">development guides</span>.
           </p>
 
-          <div className="flex flex-wrap items-center gap-6 mb-12">
-            <Link href="/blog" className="px-8 py-4 bg-gradient-to-r from-[#FF6A00] to-[#FF3D00] text-white font-bold rounded-lg flex items-center gap-2 hover:scale-105 transition-all shadow-[0_10px_40px_rgba(255,106,0,0.3)] group">
+          <div className="flex flex-wrap items-center gap-4 md:gap-6 mb-12">
+            <Link href="/blog" className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-[#FF6A00] to-[#FF3D00] text-white font-bold rounded-lg flex items-center justify-center gap-2 hover:scale-105 transition-all shadow-[0_10px_40px_rgba(255,106,0,0.3)] group">
               Explore Articles
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link href="/blog" className="px-8 py-4 text-white font-bold rounded-lg flex items-center gap-2 hover:bg-white/5 transition-all border border-white/10 group">
+            <Link href="/blog" className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 text-white font-bold rounded-lg flex items-center justify-center gap-2 hover:bg-white/5 transition-all border border-white/10 group">
               <Play size={18} fill="currentColor" />
               Start Reading
             </Link>
