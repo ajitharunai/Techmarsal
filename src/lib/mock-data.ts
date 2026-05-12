@@ -522,9 +522,9 @@ export const MOCK_POSTS: BlogPost[] = [
     readTime: '12 min read',
     image: 'https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&q=80&w=1200',
     author: {
-      name: 'Sarah Chen',
-      image: 'https://i.pravatar.cc/150?u=sarah',
-      id: 'sarah-chen'
+      name: 'Ajith Kumar',
+      image: 'https://www.arunaiajith.blog/images/ajith-profile.png',
+      id: 'ajith-kumar'
     },
     content: `
       <p>Next.js 14 has introduced a paradigm shift in how we build full-stack React applications with the stabilization of <strong>Server Actions</strong>. By allowing developers to define server-side logic directly alongside their UI components, Server Actions simplify the data mutation process and reduce the need for boilerplate API routes. In this comprehensive guide, we'll master the art of building type-safe, high-performance forms using the latest Next.js features.</p>
@@ -572,9 +572,9 @@ export const MOCK_POSTS: BlogPost[] = [
     readTime: '10 min read',
     image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80&w=800',
     author: {
-      name: 'Marcus Thorne',
-      image: 'https://i.pravatar.cc/150?u=marcus',
-      id: 'marcus-thorne'
+      name: 'Ajith Kumar',
+      image: 'https://www.arunaiajith.blog/images/ajith-profile.png',
+      id: 'ajith-kumar'
     },
     content: `
       <p>The "Growth at All Costs" era of startup building is over. In 2024, founders are navigating a "Funding Winter" where capital is expensive, investors are cautious, and sustainability is the new North Star. In this strategic analysis, we draw lessons from top founders who are successfully building resilient companies in the current economic climate.</p>
@@ -607,11 +607,11 @@ export const MOCK_POSTS: BlogPost[] = [
     category: 'Tools',
     date: 'May 2, 2024',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1664575196412-38c3a8c044bb?auto=format&fit=crop&q=80&w=800',
+    image: '/images/vibrant-ai-pattern.png',
     author: {
-      name: 'Elena Rodriguez',
-      image: 'https://i.pravatar.cc/150?u=elena',
-      id: 'elena-rodriguez'
+      name: 'Ajith Kumar',
+      image: 'https://www.arunaiajith.blog/images/ajith-profile.png',
+      id: 'ajith-kumar'
     },
     content: `
       <p>The developer experience (DX) is being fundamentally rewritten by artificial intelligence. We are moving from a world of manual "typing" to a world of "orchestration," where AI-powered tools handle the repetitive parts of software development, allowing engineers to focus on high-level architecture and problem-solving. In this article, we count down the top 10 AI tools that every modern developer should have in their toolkit in 2024.</p>
