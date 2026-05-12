@@ -42,9 +42,13 @@ export default function BlogCard({
         <div className="absolute inset-0 bg-gradient-to-t from-bg-primary/90 via-bg-primary/20 to-transparent opacity-80" />
         
         {/* Category Badge */}
-        <div className="absolute top-4 left-4 px-3 py-1 rounded-lg glass-morphism text-[10px] font-bold text-white uppercase tracking-widest border border-white/10 z-10" suppressHydrationWarning>
+        <Link 
+          href={`/category/${category.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
+          className="absolute top-4 left-4 px-3 py-1 rounded-lg glass-morphism text-[10px] font-bold text-white uppercase tracking-widest border border-white/10 z-10 hover:bg-[#FF6A00] transition-colors" 
+          suppressHydrationWarning
+        >
           {category}
-        </div>
+        </Link>
         
         {/* Hover Arrow */}
         <div className="absolute top-4 right-4 w-10 h-10 rounded-full glass-morphism flex items-center justify-center text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 z-10 border border-white/10">

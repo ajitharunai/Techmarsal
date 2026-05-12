@@ -14,9 +14,11 @@ import {
 import Link from 'next/link';
 
 export default function CategoryPage({ params }: { params: { slug: string } }) {
-  const categoryName = params.slug.toUpperCase().replace(/-/g, ' ');
+  const slug = params?.slug || '';
+  const decodedSlug = typeof slug === 'string' ? decodeURIComponent(slug) : '';
+  const categoryName = decodedSlug.toUpperCase().replace(/-/g, ' ');
   const categoryPosts = MOCK_POSTS.filter(p => 
-    p.category.toLowerCase().includes(params.slug.toLowerCase())
+    p.category.toLowerCase().includes(decodedSlug.toLowerCase())
   );
 
   return (

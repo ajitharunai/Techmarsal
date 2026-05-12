@@ -17,7 +17,8 @@ import {
 } from 'lucide-react';
 
 export default function BlogDetailPage({ params }: { params: { slug: string } }) {
-  const post = MOCK_POSTS.find(p => p.slug === params.slug) || MOCK_POSTS[0];
+  const slug = params?.slug || '';
+  const post = MOCK_POSTS.find(p => p.slug === slug) || MOCK_POSTS[0];
 
   const tocItems = [
     { id: 'introduction', text: 'Introduction', level: 2 },
