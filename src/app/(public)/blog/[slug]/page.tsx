@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Navbar from '@/components/shared/Navbar';
 import TableOfContents from '@/components/shared/TableOfContents';
-import { MOCK_POSTS } from '@/lib/mock-data';
+import { MOCK_POSTS, BlogPost } from '@/lib/mock-data';
 import { 
   ChevronRight, 
   Calendar, 
@@ -18,7 +18,7 @@ import {
 
 export default function BlogDetailPage({ params }: { params: { slug: string } }) {
   const slug = params?.slug || '';
-  const post = MOCK_POSTS.find(p => p.slug === slug) || MOCK_POSTS[0];
+  const post: BlogPost = MOCK_POSTS.find(p => p.slug === slug) || MOCK_POSTS[0];
 
   const tocItems = [
     { id: 'introduction', text: 'Introduction', level: 2 },

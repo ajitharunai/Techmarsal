@@ -1,4 +1,31 @@
-export const MOCK_POSTS = [
+export interface Author {
+  name: string;
+  image: string;
+  id: string;
+  role?: string;
+}
+
+export interface FAQ {
+  q: string;
+  a: string;
+}
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  date: string;
+  readTime: string;
+  image: string;
+  author: Author;
+  aiSummary?: string;
+  keyTakeaways?: string[];
+  content?: string;
+  faqs?: FAQ[];
+}
+
+export const MOCK_POSTS: BlogPost[] = [
   {
     slug: 'the-ai-era-navigating-frontier',
     title: 'The AI Era: Navigating the New Frontier of Intelligence',
